@@ -1,17 +1,22 @@
 ---
 layout: default
 ---
+			<section id="one" class="wrapper">
+				<div class="inner alt">
+					<section class="spotlight">
+						<div class="content">
+						
+							<article class="post">
+								<h3>{{ page.title }}</h3>
 
-<article class="post">
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
-</article>
+								<p>
+								{{ content }}
+								
+								</p>
+								</br>
+								Written on {{ page.date | date: "%B %e, %Y" }}
+							</article>
+						</div>
+					</section>
+				</div>
+			</section>
