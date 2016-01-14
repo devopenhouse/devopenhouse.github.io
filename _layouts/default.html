@@ -6,46 +6,75 @@
 -->
 <html>
 	<head>
-		<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-		
-		{% include meta.html %}
-		
+		<title>DevOpenHouse</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="../assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
-	<body>
-	<div class="wrapper-masthead">
-	  <div class="container">
-		<header class="masthead clearfix">
+	<body id="top">
 
-		  <div class="site-info">
-			<h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-			<p class="site-description">{{ site.description }}</p>
-		  </div>
+		<!-- Header -->
+			<header id="header">
+				<div class="content">
+								<div class="image"><img src="images/screen.png" alt="" /></div> </br> </br>
 
-		  <nav>
-			<a href="{{ site.baseurl }}/">Blog</a>
-			<a href="{{ site.baseurl }}/about">About</a>
-		  </nav>
-		</header>
-	  </div>
-	</div>
+					<h1><a href="#">#DEVOPENHOUSE</a></h1>
+					<p>Aprenda a programar com seus amigos no conforto da sua casa</p>
+					<ul class="actions">
+						<li>
+							<a href="#one" class="button icon fa-chevron-down scrolly">Saiba mais</a>
+						</li>
+						<li>
+							<a href="#one" class="button icon fa-chevron-down scrolly">Saiba mais</a>
+						</li>
+					</ul>
+				</div>
+			</header>
 
-	<div id="main" role="main" class="container">
-	  {{ content }}
-	</div>
+		<!-- one -->
+			<section id="one" class="wrapper">
+				<div class="inner alt">
+					<section class="spotlight">
+						<div class="image"><img src="images/screen.png" alt="" /></div>
+						<div class="content">
+							<h3>O que é o #DevOpenHouse ?</h3>
+							<p>Essa é uma modalidade de meetup que criei para trazer um ambiente mais familiar para alguns eventos de software.</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/idea.jpg" alt="" /></div>
+						<div class="content">
+							<h3>Por que organizar um #DevOpenHouse?</h3>
+							<p>
+							Participo ativamente a muito tempo de várias comunidades de software e no decorrer desses anos percebi que o grupo aprende bem mais quando interage. No entanto existe um item que torna essa interação um pouco mais complicada, "Os novatos mais tímidos" e nada melhor do que um local onde essas pessoas já se sintam em casa.
+							</p>
+							
+							<p>
+							Logo... Seguido esta modalidade, podemos montar um meetup em uma casa em que essa pessoa se sinta mais a vontade para interagir, dando sempre prioridade para grupos bem menores e possivelmente com pessoas que já existam algum vinculo.
+							</p>
+						</div>
+					</section>
+				</div>
+			</section>
 
-	<div class="wrapper-footer">
-	  <div class="container">
-		<footer class="footer">
-		  {% include svg-icons.html %}
-		</footer>
-	  </div>
-	</div>
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://github.com/devopenhouse/devopenhouse" target="_blank" class="icon fa-github"><span class="label">github</span></a></li>
+				</ul>
+				<p class="copyright">&copy; Template by: <a href="http://html5up.net">HTML5 UP</a></p>
+			</footer>
 
-	{% include analytics.html %}
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
 	</body>
+</html>
