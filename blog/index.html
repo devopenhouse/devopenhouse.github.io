@@ -15,18 +15,22 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
 	</head>
 	<body id="top">
-
-			<section id="one" class="wrapper">
-				<div class="inner alt">
-					<section class="spotlight">
-						<div class="image"><img src="../images/screen.png" alt="" /></div>
-						<div class="content">
-							<h3>O que é o #DevOpenHouse ?</h3>
-							<p>Essa é uma modalidade de meetup que criei para trazer um ambiente mais familiar para alguns eventos de software.</p>
-						</div>
-					</section>
-				</div>
-			</section>
+		
+	  {% for post in site.posts %}
+	  
+	  
+		<section id="one" class="wrapper">
+			<div class="inner alt">
+				<section class="spotlight">
+					<div class="image"><img src="../images/screen.png" alt="" /></div>
+					<div class="content">
+						<h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+					      <p>{{ post.content | strip_html | truncatewords: 56 }} <a href="{{ post.url | prepend: site.baseurl }}" title="Permalink to: {{ post.title }}" class="read-more">Read more</a></p>
+					</div>
+				</section>
+			</div>
+		</section>
+	  
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
